@@ -34,7 +34,7 @@ namespace SimpleRestApi_4._8
                 string created = "";
                 string agv = "";
 
-                var certificate = new X509Certificate2("D:\\OneDrive - Groupe Monnoyeur\\Bureau\\certificat.pfx", "test");
+                var certificate = new X509Certificate2(System.AppDomain.CurrentDomain.BaseDirectory + "\\certificat.pfx", "test");
 
                 // Create an HttpClientHandler and add the certificate
                 var handler = new HttpClientHandler();

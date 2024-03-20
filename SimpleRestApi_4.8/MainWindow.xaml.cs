@@ -137,7 +137,7 @@ namespace SimpleRestApi_4._8
 
             try
             {
-                var certificate = new X509Certificate2("D:\\OneDrive - Groupe Monnoyeur\\Bureau\\certificat.pfx", "test");
+                var certificate = new X509Certificate2(System.AppDomain.CurrentDomain.BaseDirectory + "\\certificat.pfx", "test");
 
                 // Create an HttpClientHandler and add the certificate
                 var handler = new HttpClientHandler();
@@ -178,7 +178,7 @@ namespace SimpleRestApi_4._8
             try
             {
 
-                var certificate = new X509Certificate2("D:\\OneDrive - Groupe Monnoyeur\\Bureau\\certificat.pfx", "test");
+                var certificate = new X509Certificate2(System.AppDomain.CurrentDomain.BaseDirectory+"\\certificat.pfx", "test");
 
                 // Create an HttpClientHandler and add the certificate
                 var handler = new HttpClientHandler();
@@ -277,7 +277,7 @@ namespace SimpleRestApi_4._8
         private void Eventreceive_ack_Click(object sender, RoutedEventArgs e)
         {
 
-            var certificate = new X509Certificate2("D:\\OneDrive - Groupe Monnoyeur\\Bureau\\certificat.pfx", "test");
+            var certificate = new X509Certificate2(System.AppDomain.CurrentDomain.BaseDirectory + "\\certificat.pfx", "test");
 
             // Create an HttpClientHandler and add the certificate
             var handler = new HttpClientHandler();
